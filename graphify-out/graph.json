@@ -765,6 +765,66 @@
       "source_location": "L39"
     },
     {
+      "id": "docs_next_nexus_status",
+      "label": "next-nexus-status.md",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Next-Nexus current status",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "next-nexus-status.md",
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_next_nexus_status_current_model_routing",
+      "label": "Current model routing",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Next-Nexus current status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "current model routing",
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "docs_next_nexus_status_next_nexus_current_status",
+      "label": "Next-Nexus current status",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Next-Nexus current status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "next-nexus current status",
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_next_nexus_status_next_nexus_operating_pages",
+      "label": "Next-Nexus operating pages",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Next-Nexus current status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "next-nexus operating pages",
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L41"
+    },
+    {
+      "id": "docs_next_nexus_status_working_now",
+      "label": "Working now",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Next-Nexus current status",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "working now",
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L9"
+    },
+    {
       "id": "obsidian_readme",
       "label": "obsidian/README.md",
       "_origin": "ast",
@@ -1396,6 +1456,50 @@
       "weight": 1.0
     },
     {
+      "source": "docs_next_nexus_status",
+      "target": "docs_next_nexus_status_next_nexus_current_status",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_next_nexus_status_next_nexus_current_status",
+      "target": "docs_next_nexus_status_current_model_routing",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_next_nexus_status_next_nexus_current_status",
+      "target": "docs_next_nexus_status_next_nexus_operating_pages",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_next_nexus_status_next_nexus_current_status",
+      "target": "docs_next_nexus_status_working_now",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/next-nexus-status.md",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "docs_offline_agent_voice",
       "target": "docs_offline_agent_voice_offline_voice_for_the_agent_fleet",
       "relation": "contains",
@@ -1859,5 +1963,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7481ae051f5192c0b1561f50983b809995c86d02"
+  "built_at_commit": "5cf2cc5b84e25ed9a473e0d6f1f74cc58e45a139"
 }

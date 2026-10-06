@@ -1,16 +1,16 @@
 # Graph Report - N  (2026-10-06)
 
 ## Corpus Check
-- 22 files · ~7,437 words
+- 23 files · ~7,817 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 88 nodes · 71 edges · 21 communities (13 shown, 8 thin omitted)
+- 93 nodes · 75 edges · 22 communities (14 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7481ae05`
+- Built from commit: `5cf2cc5b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,6 +36,7 @@
 - Offline voice for the agent fleet
 - StudEx mobile and desktop agent app
 - MiniCPM5 and Cactus compatibility
+- Next-Nexus current status
 
 ## God Nodes (most connected - your core abstractions)
 1. `StudEx mobile and desktop agent app` - 9 edges
@@ -44,10 +45,10 @@
 4. `Remote IDE and agent mesh` - 5 edges
 5. `Findings` - 5 edges
 6. `MiniCPM5 and Cactus compatibility` - 4 edges
-7. `StudEx Agent Home` - 3 edges
-8. `Cloud-first build policy` - 3 edges
-9. `Agent runtime and model placement` - 3 edges
-10. `Model house integration` - 3 edges
+7. `Next-Nexus current status` - 4 edges
+8. `StudEx Agent Home` - 3 edges
+9. `Cloud-first build policy` - 3 edges
+10. `Agent runtime and model placement` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -55,7 +56,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (21 total, 8 thin omitted)
+## Communities (22 total, 8 thin omitted)
 
 ### Community 0 - "StudEx Agent Home"
 Cohesion: 0.50
@@ -109,13 +110,17 @@ Nodes (9): Connecting the phone, Fully local GGUF mode, GoClaw, ZeroClaw and ten
 Cohesion: 0.40
 Nodes (4): Cactus, MiniCPM5, MiniCPM5 and Cactus compatibility, Recommended routing
 
+### Community 21 - "Next-Nexus current status"
+Cohesion: 0.40
+Nodes (4): Current model routing, Next-Nexus current status, Next-Nexus operating pages, Working now
+
 ## Knowledge Gaps
-- **50 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+45 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 70 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **53 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+48 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 74 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract` to the rest of the system?**
-  _50 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _53 weakly-connected nodes found - possible documentation gaps or missing edges._
