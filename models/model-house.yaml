@@ -10,28 +10,28 @@ endpoints:
     launch_command: "jev-style serve --release 2b --precision 8bit --backend mlx"
     host: macbook
     status: verified_local
-    notes: "Qwen3.5-derived 2B MLX 8-bit service; use for routing/decision support, not general chat."
+    notes: "Qwen3.5-derived 2B MLX 8-bit service; roughly 2-3.8 GB depending on build. The 0.8B release is roughly 1.5 GB. Use for routing/decision support, not general chat."
   - id: laya
     family: laya
     purpose: system-1_choice_score_routing
     protocol: pending
     host: pending
     status: candidate_not_installed
-    notes: "Non-autoregressive decision model; exact checkpoint and endpoint must be pinned before use."
+    notes: "Non-autoregressive decision model. English and typed-decision checkpoints are about 421M parameters; multilingual is about 322M. Exact checkpoint and endpoint must be pinned before use."
   - id: qwen-candidate
     family: qwen-alibaba
     purpose: local_coding_and_reasoning
     protocol: ollama_or_openai_compatible
     host: pending
     status: candidate_requires_review
-    notes: "Do not use a community 'uncensored' tag as provenance. Record exact model, license, hash, modalities and tool tests."
+    notes: "Qwen3 ranges from 0.6B to 32B dense and 30B-A3B/235B-A22B MoE. Do not use a community 'uncensored' tag as provenance. Record exact model, license, hash, modalities and tool tests."
   - id: deepseek-harness
     family: deepseek-harness
     purpose: provider_neutral_orchestration
     protocol: openai_or_anthropic_compatible
     host: pending
     status: experimental_not_installed
-    notes: "Developer preview; run in a least-privilege VM and connect through an adapter."
+    notes: "Harness, not a model. DeepSeek-V3 is 671B total/37B active and is not a MacBook model; distilled 1.5B-70B variants are the local candidates. Run the harness in a least-privilege VM and connect through an adapter."
 
 routing:
   decision_model: jev-style-local
