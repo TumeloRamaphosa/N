@@ -11,5 +11,6 @@
   "9": "local-model-selection.md",
   "10": "fleet-and-remote-desktop.md",
   "11": "Cloud-first build policy",
-  "12": "hourly_runtime_cache_reset.sh"
+  "12": "hourly_runtime_cache_reset.sh",
+  "13": "Remote IDE and agent mesh"
 }
