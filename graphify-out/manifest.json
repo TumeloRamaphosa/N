@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "models/model-house.yaml": {
-    "mtime": 1791287979.1433425,
-    "seen": 1791288000.078086,
-    "ast_hash": "741dc272cacb7129b3afa14a73e4c844",
+    "mtime": 1791288272.2781672,
+    "seen": 1791288417.030685,
+    "ast_hash": "2dfe48c1e597421249de1f5965af881b",
     "semantic_hash": ""
   },
   "obsidian/README.md": {
@@ -123,6 +123,18 @@
     "mtime": 1791287978.9454923,
     "seen": 1791288000.078079,
     "ast_hash": "4c9958099ef580ca69c63f2907b30236",
+    "semantic_hash": ""
+  },
+  "docs/offline-agent-voice.md": {
+    "mtime": 1791288272.4220307,
+    "seen": 1791288417.030678,
+    "ast_hash": "7be4e1c886d1ebe93b10c6f77bbc387f",
+    "semantic_hash": ""
+  },
+  "docs/storage-and-linux-migration-plan.md": {
+    "mtime": 1791288187.292707,
+    "seen": 1791288417.030682,
+    "ast_hash": "65e93db6c2ca64463e11e4564568d39d",
     "semantic_hash": ""
   }
 }

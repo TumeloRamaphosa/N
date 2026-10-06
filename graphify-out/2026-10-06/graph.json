@@ -381,6 +381,54 @@
       "source_location": "L3"
     },
     {
+      "id": "docs_model_house_agent_runtime_matrix",
+      "label": "model-house-agent-runtime-matrix.md",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Agent runtime and model placement",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "model-house-agent-runtime-matrix.md",
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_model_house_agent_runtime_matrix_agent_runtime_and_model_placement",
+      "label": "Agent runtime and model placement",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Agent runtime and model placement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "agent runtime and model placement",
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_model_house_agent_runtime_matrix_model_tiers",
+      "label": "Model tiers",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Agent runtime and model placement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "model tiers",
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "docs_model_house_agent_runtime_matrix_runtime_boundaries",
+      "label": "Runtime boundaries",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Agent runtime and model placement",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "runtime boundaries",
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L31"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -838,6 +886,39 @@
       "weight": 1.0
     },
     {
+      "source": "docs_model_house_agent_runtime_matrix",
+      "target": "docs_model_house_agent_runtime_matrix_agent_runtime_and_model_placement",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_model_house_agent_runtime_matrix_agent_runtime_and_model_placement",
+      "target": "docs_model_house_agent_runtime_matrix_model_tiers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_model_house_agent_runtime_matrix_agent_runtime_and_model_placement",
+      "target": "docs_model_house_agent_runtime_matrix_runtime_boundaries",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/model-house-agent-runtime-matrix.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
       "source": "docs_model_house_model_house_integration",
       "target": "docs_model_house_gateway_and_knowledge_layers",
       "relation": "contains",
@@ -1224,5 +1305,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1f75ec3142d29e41562dc2f6baf4eb23c6af4918"
+  "built_at_commit": "9d6445daa988f61dfb5cb1b91eade877225c9c06"
 }

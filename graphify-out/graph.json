@@ -429,6 +429,138 @@
       "source_location": "L31"
     },
     {
+      "id": "docs_storage_and_linux_migration_plan",
+      "label": "storage-and-linux-migration-plan.md",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "storage-and-linux-migration-plan.md",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_current_inventory",
+      "label": "Current inventory",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "current inventory",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_linux_vm_capacity",
+      "label": "Linux VM capacity",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "linux vm capacity",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L53"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_model_house_layout",
+      "label": "Model-house layout",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "model-house layout",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_reversible_first_move",
+      "label": "Reversible first move",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "reversible first move",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "label": "Storage, model and Linux migration plan",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "storage, model and linux migration plan",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_storage_and_linux_migration_plan_usb_flashing_gate",
+      "label": "USB flashing gate",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "Storage, model and Linux migration plan",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "usb flashing gate",
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L73"
+    },
+    {
+      "id": "docs_offline_agent_voice",
+      "label": "offline-agent-voice.md",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Offline voice for the agent fleet",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "offline-agent-voice.md",
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_offline_agent_voice_offline_voice_for_the_agent_fleet",
+      "label": "Offline voice for the agent fleet",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Offline voice for the agent fleet",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "offline voice for the agent fleet",
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_offline_agent_voice_recommended_tiers",
+      "label": "Recommended tiers",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Offline voice for the agent fleet",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "recommended tiers",
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "docs_offline_agent_voice_storage_and_drive_policy",
+      "label": "Storage and Drive policy",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Offline voice for the agent fleet",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "storage and drive policy",
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L26"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -941,6 +1073,39 @@
       "weight": 1.0
     },
     {
+      "source": "docs_offline_agent_voice",
+      "target": "docs_offline_agent_voice_offline_voice_for_the_agent_fleet",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_offline_agent_voice_offline_voice_for_the_agent_fleet",
+      "target": "docs_offline_agent_voice_storage_and_drive_policy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_offline_agent_voice_offline_voice_for_the_agent_fleet",
+      "target": "docs_offline_agent_voice_recommended_tiers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/offline-agent-voice.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "docs_remote_ide_agent_mesh",
       "target": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
       "relation": "contains",
@@ -1070,6 +1235,72 @@
       "confidence_score": 1.0,
       "source_file": "docs/source-file-review-2026-10-06.md",
       "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_reversible_first_move",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_current_inventory",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_model_house_layout",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_linux_vm_capacity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_storage_and_linux_migration_plan_storage_model_and_linux_migration_plan",
+      "target": "docs_storage_and_linux_migration_plan_usb_flashing_gate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/storage-and-linux-migration-plan.md",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -1305,5 +1536,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9d6445daa988f61dfb5cb1b91eade877225c9c06"
+  "built_at_commit": "7911118bb39e71f37ecbfb1ef326cd13fd7457b1"
 }

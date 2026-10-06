@@ -15,5 +15,7 @@
   "13": "Remote IDE and agent mesh",
   "14": "studex-agent",
   "15": "StudEx coding agent and model",
-  "16": "Agent runtime and model placement"
+  "16": "Agent runtime and model placement",
+  "17": "Storage, model and Linux migration plan",
+  "18": "Offline voice for the agent fleet"
 }

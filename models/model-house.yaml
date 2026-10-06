@@ -91,3 +91,41 @@ integrations:
     placement: macmini_or_cloud_worker
     local_model_tier: gateway_selected
     multimodal_required: false
+
+speech:
+  - id: kokoro-82m
+    family: kokoro
+    purpose: fast_offline_agent_voice
+    protocol: local_cli_or_openai_compatible_server
+    host: macbook_or_macmini
+    status: candidate_small
+    approximate_parameters: 82m
+    storage_note: "Plan roughly 0.1-0.4 GB for weights, voices and runtime; verify the exact voice bundle checksum."
+    license_note: "Verify the upstream model and voice licenses before commercial redistribution."
+  - id: piper
+    family: piper
+    purpose: lowest_latency_offline_tts
+    protocol: local_onnx_cli
+    host: macbook_or_macmini
+    status: candidate_cpu
+    approximate_parameters: voice_dependent
+    storage_note: "Voice files are typically tens of megabytes each; keep selected voices on Models-House."
+    license_note: "Review the individual voice/model license and phonemizer dependencies."
+  - id: qwen3-tts
+    family: qwen3-tts
+    purpose: multilingual_controlled_voice_and_voice_design
+    protocol: qwen_tts_or_openai_compatible_adapter
+    host: macmini_or_gcp
+    status: candidate_large
+    approximate_parameters: 0.6b_or_1.7b
+    storage_note: "Plan roughly 1-4 GB per checkpoint plus tokenizer and runtime; exact size depends on precision."
+    license_note: "Pin the checkpoint, tokenizer and license from the official Qwen repository."
+  - id: mlx-speech
+    family: mlx-audio
+    purpose: apple_silicon_offline_tts_and_asr
+    protocol: python_cli_or_local_api
+    host: macbook
+    status: candidate_apple_silicon
+    approximate_parameters: model_dependent
+    storage_note: "Model-specific; store downloaded checkpoints under Models-House/mlx-audio."
+    license_note: "Verify each selected model and voice checkpoint separately."
