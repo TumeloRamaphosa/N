@@ -76,5 +76,11 @@
     "seen": 1791285168.4900758,
     "ast_hash": "d827c7b8651443e3d8e5726aa11f31a6",
     "semantic_hash": ""
+  },
+  "docs/fleet-and-remote-desktop.md": {
+    "mtime": 1791285301.269679,
+    "seen": 1791285308.60501,
+    "ast_hash": "b94a24b18b5f777e71f40830ea51ff8f",
+    "semantic_hash": ""
   }
 }

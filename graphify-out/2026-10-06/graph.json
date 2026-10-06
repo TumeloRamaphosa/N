@@ -100,6 +100,30 @@
       "source_location": "L44"
     },
     {
+      "id": "docs_fleet_and_remote_desktop",
+      "label": "fleet-and-remote-desktop.md",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "fleet-and-remote-desktop.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "fleet-and-remote-desktop.md",
+      "source_file": "docs/fleet-and-remote-desktop.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_fleet_and_remote_desktop_fleet_hub_and_private_remote_access",
+      "label": "Fleet hub and private remote access",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "fleet-and-remote-desktop.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fleet hub and private remote access",
+      "source_file": "docs/fleet-and-remote-desktop.md",
+      "source_location": "L1"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -443,6 +467,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_fleet_and_remote_desktop",
+      "target": "docs_fleet_and_remote_desktop_fleet_hub_and_private_remote_access",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/fleet-and-remote-desktop.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "docs_local_model_selection",
       "target": "docs_local_model_selection_local_model_selection",
       "relation": "contains",
@@ -708,5 +743,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aefb68f037e184c5bc07b52fd23a27e259026497"
+  "built_at_commit": "cb3877d319c7f887c81ce4d12b8bd4ab1ed0eadb"
 }
