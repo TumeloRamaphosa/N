@@ -1,0 +1,41 @@
+schema_version: 1
+policy: pin_every_model_by_source_checksum_runtime_and_license
+artifacts_root: external://approved-model-storage
+endpoints:
+  - id: jev-style-local
+    family: jev-style
+    purpose: system-1_decision_routing
+    protocol: local_http
+    base_url: http://127.0.0.1:8009
+    launch_command: "jev-style serve --release 2b --precision 8bit --backend mlx"
+    host: macbook
+    status: verified_local
+    notes: "Qwen3.5-derived 2B MLX 8-bit service; use for routing/decision support, not general chat."
+  - id: laya
+    family: laya
+    purpose: system-1_choice_score_routing
+    protocol: pending
+    host: pending
+    status: candidate_not_installed
+    notes: "Non-autoregressive decision model; exact checkpoint and endpoint must be pinned before use."
+  - id: qwen-candidate
+    family: qwen-alibaba
+    purpose: local_coding_and_reasoning
+    protocol: ollama_or_openai_compatible
+    host: pending
+    status: candidate_requires_review
+    notes: "Do not use a community 'uncensored' tag as provenance. Record exact model, license, hash, modalities and tool tests."
+  - id: deepseek-harness
+    family: deepseek-harness
+    purpose: provider_neutral_orchestration
+    protocol: openai_or_anthropic_compatible
+    host: pending
+    status: experimental_not_installed
+    notes: "Developer preview; run in a least-privilege VM and connect through an adapter."
+
+routing:
+  decision_model: jev-style-local
+  default_chat_model: pending
+  multimodal_model: pending
+  fallback: pending
+  rule: "Agents call an adapter; adapters expose health, model_id, checksum, modality and token usage."

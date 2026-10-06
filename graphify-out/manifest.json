@@ -1,0 +1,50 @@
+{
+  "README.md": {
+    "mtime": 1791284069.4556913,
+    "seen": 1791284074.826741,
+    "ast_hash": "f25b6d2f98e169230acad2e59cee1aad",
+    "semantic_hash": ""
+  },
+  "agents/registry.yaml": {
+    "mtime": 1791284069.9119167,
+    "seen": 1791284074.8267462,
+    "ast_hash": "2b49df14c0632b07e45c1c3cc583e50c",
+    "semantic_hash": ""
+  },
+  "cron/jobs.yaml": {
+    "mtime": 1791284071.2421594,
+    "seen": 1791284074.826748,
+    "ast_hash": "527a717c7c62386c977eb51de4e86adf",
+    "semantic_hash": ""
+  },
+  "docs/model-house.md": {
+    "mtime": 1791284070.5902867,
+    "seen": 1791284074.8267488,
+    "ast_hash": "120c631f5f41efb15d2f44926633630c",
+    "semantic_hash": ""
+  },
+  "memory/README.md": {
+    "mtime": 1791284070.8009372,
+    "seen": 1791284074.82675,
+    "ast_hash": "d1d96626050d584628d382ab221aeef2",
+    "semantic_hash": ""
+  },
+  "models/model-house.yaml": {
+    "mtime": 1791284070.204668,
+    "seen": 1791284074.826751,
+    "ast_hash": "96fe66800b2dd52e212a3c23fe463990",
+    "semantic_hash": ""
+  },
+  "obsidian/README.md": {
+    "mtime": 1791284071.454771,
+    "seen": 1791284074.8267531,
+    "ast_hash": "3baf70f9b0c5f89aa02d19f94d726490",
+    "semantic_hash": ""
+  },
+  "work/README.md": {
+    "mtime": 1791284071.0072992,
+    "seen": 1791284074.826754,
+    "ast_hash": "4cc6cab6e2fb8d0020ac93948963aec8",
+    "semantic_hash": ""
+  }
+}

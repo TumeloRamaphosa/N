@@ -1,0 +1,21 @@
+schema_version: 1
+policy: definitions_only_host_runners_render_and_execute
+jobs:
+  - id: hourly-agent-health
+    schedule: "0 * * * *"
+    command: "python -m tools.agent_health --repo ."
+    outputs: reports/hourly/
+    enabled: false
+  - id: daily-agent-summary
+    schedule: "0 18 * * *"
+    command: "python -m tools.daily_summary --repo ."
+    outputs: reports/daily/
+    enabled: false
+  - id: weekly-skill-review
+    schedule: "0 9 * * 1"
+    command: "python -m tools.skill_review --repo ."
+    outputs: reports/weekly/
+    enabled: false
+
+# Jobs are intentionally disabled until a host, identity, output destination and
+# notification policy are reviewed. Never place API keys in this file.

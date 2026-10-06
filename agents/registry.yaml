@@ -1,0 +1,51 @@
+schema_version: 1
+repository_role: canonical_agent_home
+agents:
+  - id: codex
+    role: control_plane_and_coding
+    status: active
+    work_dir: work/codex
+    memory_dir: memory/codex
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Codex
+  - id: claudio
+    role: cloud_super_agents_head
+    status: interview_pending
+    work_dir: work/claudio
+    memory_dir: memory/claudio
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Claudio
+  - id: adam-smasher
+    role: openclaw_macbook
+    status: interview_pending
+    work_dir: work/adam-smasher
+    memory_dir: memory/adam-smasher
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Adam Smasher
+  - id: robusca
+    role: mac-mini-president
+    status: interview_pending
+    work_dir: work/robusca
+    memory_dir: memory/robusca
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Robusca
+  - id: sentinel
+    role: dark-factory-openclaw
+    status: interview_pending
+    work_dir: work/sentinel
+    memory_dir: memory/sentinel
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Sentinel
+  - id: katjana
+    role: studbot_operations
+    status: interview_pending
+    work_dir: work/katjana
+    memory_dir: memory/katjana
+    obsidian_vault: /Users/tumeloramaphosa/Documents/StudEx Agent Brains/Katjana
+  - id: minimax-fleet
+    role: external_agent_fleet
+    status: inventory_pending
+    work_dir: work/minimax-fleet
+    memory_dir: memory/minimax-fleet
+    obsidian_vault: pending
+  - id: nexus-server
+    role: shared_gateway_and_mcp
+    status: inventory_pending
+    work_dir: work/nexus-server
+    memory_dir: memory/nexus-server
+    obsidian_vault: pending
