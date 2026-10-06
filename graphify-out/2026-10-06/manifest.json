@@ -18,9 +18,9 @@
     "semantic_hash": ""
   },
   "docs/model-house.md": {
-    "mtime": 1791284070.5902867,
-    "seen": 1791284074.8267488,
-    "ast_hash": "120c631f5f41efb15d2f44926633630c",
+    "mtime": 1791285164.8286283,
+    "seen": 1791285168.490077,
+    "ast_hash": "67fa29a71c642e468cfc7d274ccc35e3",
     "semantic_hash": ""
   },
   "memory/README.md": {
@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "models/model-house.yaml": {
-    "mtime": 1791284214.0493686,
-    "seen": 1791284216.443084,
-    "ast_hash": "e2a6a2d210e5c18e5d7ac7e984525883",
+    "mtime": 1791285164.7053556,
+    "seen": 1791285168.490081,
+    "ast_hash": "ce253be6f1c91235f59383b1ac41c2ff",
     "semantic_hash": ""
   },
   "obsidian/README.md": {
@@ -69,6 +69,12 @@
     "mtime": 1791284735.2993908,
     "seen": 1791284739.977659,
     "ast_hash": "0866ac7ebc29ab6f06809c0bdb0fb6a7",
+    "semantic_hash": ""
+  },
+  "docs/local-model-selection.md": {
+    "mtime": 1791285164.9225395,
+    "seen": 1791285168.4900758,
+    "ast_hash": "d827c7b8651443e3d8e5726aa11f31a6",
     "semantic_hash": ""
   }
 }
