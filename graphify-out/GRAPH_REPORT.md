@@ -1,16 +1,16 @@
 # Graph Report - N  (2026-10-06)
 
 ## Corpus Check
-- 20 files · ~5,768 words
+- 21 files · ~6,591 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 73 nodes · 58 edges · 19 communities (11 shown, 8 thin omitted)
+- 81 nodes · 65 edges · 20 communities (12 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7911118b`
+- Built from commit: `88008feb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,18 +34,19 @@
 - Agent runtime and model placement
 - Storage, model and Linux migration plan
 - Offline voice for the agent fleet
+- StudEx mobile and desktop agent app
 
 ## God Nodes (most connected - your core abstractions)
-1. `Storage, model and Linux migration plan` - 6 edges
-2. `StudEx Harness: AutoResearch + MiroFish` - 6 edges
-3. `Remote IDE and agent mesh` - 5 edges
-4. `Findings` - 5 edges
-5. `StudEx Agent Home` - 3 edges
-6. `Cloud-first build policy` - 3 edges
-7. `Agent runtime and model placement` - 3 edges
-8. `Model house integration` - 3 edges
-9. `Offline voice for the agent fleet` - 3 edges
-10. `StudEx source-file review — 2026-10-06` - 3 edges
+1. `StudEx mobile and desktop agent app` - 7 edges
+2. `Storage, model and Linux migration plan` - 6 edges
+3. `StudEx Harness: AutoResearch + MiroFish` - 6 edges
+4. `Remote IDE and agent mesh` - 5 edges
+5. `Findings` - 5 edges
+6. `StudEx Agent Home` - 3 edges
+7. `Cloud-first build policy` - 3 edges
+8. `Agent runtime and model placement` - 3 edges
+9. `Model house integration` - 3 edges
+10. `Offline voice for the agent fleet` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -53,7 +54,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (19 total, 8 thin omitted)
+## Communities (20 total, 8 thin omitted)
 
 ### Community 0 - "StudEx Agent Home"
 Cohesion: 0.50
@@ -99,13 +100,17 @@ Nodes (6): Current inventory, Linux VM capacity, Model-house layout, Reversible 
 Cohesion: 0.50
 Nodes (3): Offline voice for the agent fleet, Recommended tiers, Storage and Drive policy
 
+### Community 19 - "StudEx mobile and desktop agent app"
+Cohesion: 0.25
+Nodes (7): Fully local GGUF mode, Offline and cloud modes, One task protocol, Platform adapters, Release plan, Shared architecture, StudEx mobile and desktop agent app
+
 ## Knowledge Gaps
-- **39 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+34 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 57 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **45 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+40 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 64 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract` to the rest of the system?**
-  _39 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _45 weakly-connected nodes found - possible documentation gaps or missing edges._
