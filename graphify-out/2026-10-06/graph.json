@@ -124,6 +124,84 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_cloud_first_builds",
+      "label": "cloud-first-builds.md",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Cloud-first build policy",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "cloud-first-builds.md",
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_cloud_first_builds_cloud_first_build_policy",
+      "label": "Cloud-first build policy",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Cloud-first build policy",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "cloud-first build policy",
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_cloud_first_builds_memory_and_reset_boundary",
+      "label": "Memory and reset boundary",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Cloud-first build policy",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "memory and reset boundary",
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "docs_cloud_first_builds_placement",
+      "label": "Placement",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Cloud-first build policy",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "placement",
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "tools_hourly_runtime_cache_reset",
+      "label": "hourly_runtime_cache_reset.sh",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "hourly_runtime_cache_reset.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "hourly_runtime_cache_reset.sh",
+      "source_file": "tools/hourly_runtime_cache_reset.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "tools_hourly_runtime_cache_reset_sh__entry",
+      "label": "hourly_runtime_cache_reset.sh script",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "hourly_runtime_cache_reset.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "hourly_runtime_cache_reset.sh script",
+      "source_file": "tools/hourly_runtime_cache_reset.sh",
+      "source_location": "L1"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -467,6 +545,39 @@
       "weight": 1.0
     },
     {
+      "source": "docs_cloud_first_builds",
+      "target": "docs_cloud_first_builds_cloud_first_build_policy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_cloud_first_builds_cloud_first_build_policy",
+      "target": "docs_cloud_first_builds_memory_and_reset_boundary",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_cloud_first_builds_cloud_first_build_policy",
+      "target": "docs_cloud_first_builds_placement",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/cloud-first-builds.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "docs_fleet_and_remote_desktop",
       "target": "docs_fleet_and_remote_desktop_fleet_hub_and_private_remote_access",
       "relation": "contains",
@@ -731,6 +842,17 @@
       "weight": 1.0
     },
     {
+      "source": "tools_hourly_runtime_cache_reset",
+      "target": "tools_hourly_runtime_cache_reset_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/hourly_runtime_cache_reset.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "work_readme",
       "target": "work_readme_agent_work",
       "relation": "contains",
@@ -743,5 +865,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cb3877d319c7f887c81ce4d12b8bd4ab1ed0eadb"
+  "built_at_commit": "0e041a5a90be43297d9b1acefff4d07b249e4879"
 }

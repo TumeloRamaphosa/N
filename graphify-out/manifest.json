@@ -94,5 +94,17 @@
     "seen": 1791287137.1151412,
     "ast_hash": "3f8f7639deca0df50725e5ec58e5191c",
     "semantic_hash": ""
+  },
+  ".vscode/extensions.json": {
+    "mtime": 1791287646.5585313,
+    "seen": 1791287652.818561,
+    "ast_hash": "a8337bc41b08c194d5dbab02925a2777",
+    "semantic_hash": ""
+  },
+  "docs/remote-ide-agent-mesh.md": {
+    "mtime": 1791287646.1118581,
+    "seen": 1791287652.8185768,
+    "ast_hash": "70ea262b18ce4e417983e82f50b99e42",
+    "semantic_hash": ""
   }
 }

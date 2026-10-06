@@ -202,6 +202,78 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_remote_ide_agent_mesh",
+      "label": "remote-ide-agent-mesh.md",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "remote-ide-agent-mesh.md",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_remote_ide_agent_mesh_model_gateway",
+      "label": "Model gateway",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "model gateway",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "docs_remote_ide_agent_mesh_operating_pattern",
+      "label": "Operating pattern",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "operating pattern",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "label": "Remote IDE and agent mesh",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "remote ide and agent mesh",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_remote_ide_agent_mesh_roles",
+      "label": "Roles",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "roles",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_remote_ide_agent_mesh_shared_hosts",
+      "label": "Shared hosts",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Remote IDE and agent mesh",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "shared hosts",
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L14"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -633,6 +705,61 @@
       "weight": 1.0
     },
     {
+      "source": "docs_remote_ide_agent_mesh",
+      "target": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "target": "docs_remote_ide_agent_mesh_shared_hosts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "target": "docs_remote_ide_agent_mesh_model_gateway",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "target": "docs_remote_ide_agent_mesh_roles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_remote_ide_agent_mesh_remote_ide_and_agent_mesh",
+      "target": "docs_remote_ide_agent_mesh_operating_pattern",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/remote-ide-agent-mesh.md",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
       "source": "docs_source_file_review_2026_10_06",
       "target": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
       "relation": "contains",
@@ -865,5 +992,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0e041a5a90be43297d9b1acefff4d07b249e4879"
+  "built_at_commit": "df1b617ded978d3a9ed44beec6d62039d6532e8a"
 }

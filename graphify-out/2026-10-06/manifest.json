@@ -82,5 +82,17 @@
     "seen": 1791285308.60501,
     "ast_hash": "b94a24b18b5f777e71f40830ea51ff8f",
     "semantic_hash": ""
+  },
+  "tools/hourly_runtime_cache_reset.sh": {
+    "mtime": 1791285955.6154706,
+    "seen": 1791287137.115133,
+    "ast_hash": "e051a0dcb060428be73ed01f02545609",
+    "semantic_hash": ""
+  },
+  "docs/cloud-first-builds.md": {
+    "mtime": 1791285931.9578767,
+    "seen": 1791287137.1151412,
+    "ast_hash": "3f8f7639deca0df50725e5ec58e5191c",
+    "semantic_hash": ""
   }
 }
