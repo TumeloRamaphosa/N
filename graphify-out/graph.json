@@ -160,6 +160,30 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_source_file_review_2026_10_06",
+      "label": "source-file-review-2026-10-06.md",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "source-file-review-2026-10-06.md",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_canonical_integration_decision",
+      "label": "Canonical integration decision",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "canonical integration decision",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L63"
+    },
+    {
       "id": "docs_source_file_review_2026_10_06_findings",
       "label": "Findings",
       "_origin": "ast",
@@ -220,43 +244,168 @@
       "source_location": "L55"
     },
     {
-      "id": "docs_source_file_review_2026_10_06",
-      "label": "source-file-review-2026-10-06.md",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "StudEx source-file review \u2014 2026-10-06",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "source-file-review-2026-10-06.md",
-      "source_file": "docs/source-file-review-2026-10-06.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_source_file_review_2026_10_06_canonical_integration_decision",
-      "label": "Canonical integration decision",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "StudEx source-file review \u2014 2026-10-06",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "canonical integration decision",
-      "source_file": "docs/source-file-review-2026-10-06.md",
-      "source_location": "L63"
-    },
-    {
       "id": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
       "label": "StudEx source-file review \u2014 2026-10-06",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "StudEx source-file review \u2014 2026-10-06",
+      "community": 5,
+      "community_name": "Findings",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "studex source-file review \u2014 2026-10-06",
       "source_file": "docs/source-file-review-2026-10-06.md",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish",
+      "label": "studex-harness-autoresearch-mirofish.md",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "studex-harness-autoresearch-mirofish.md",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_first_pilot",
+      "label": "First pilot",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "first pilot",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L66"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_four_model_routing",
+      "label": "Four-model routing",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "four-model routing",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L41"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_studex_composition",
+      "label": "StudEx composition",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studex composition",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "label": "StudEx Harness: AutoResearch + MiroFish",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studex harness: autoresearch + mirofish",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_what_each_component_does",
+      "label": "What each component does",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what each component does",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_studex_harness_autoresearch_mirofish_where_gpt_5_belongs",
+      "label": "Where GPT-5 belongs",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx Harness: AutoResearch + MiroFish",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "where gpt-5 belongs",
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L54"
+    },
+    {
+      "id": "context_readme",
+      "label": "context/README.md",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "context/README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "context/readme.md",
+      "source_file": "context/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "context_readme_context_inbox",
+      "label": "Context inbox",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "context/README.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "context inbox",
+      "source_file": "context/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "tools_dictation_to_context",
+      "label": "dictation_to_context.sh",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dictation_to_context.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "dictation_to_context.sh",
+      "source_file": "tools/dictation_to_context.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "tools_dictation_to_context_sh__entry",
+      "label": "dictation_to_context.sh script",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "dictation_to_context.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "dictation_to_context.sh script",
+      "source_file": "tools/dictation_to_context.sh",
+      "source_location": "L1"
     }
   ],
   "links": [
+    {
+      "source": "context_readme",
+      "target": "context_readme_context_inbox",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "context/README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
     {
       "source": "docs_model_house",
       "target": "docs_model_house_model_house_integration",
@@ -357,6 +506,72 @@
       "weight": 1.0
     },
     {
+      "source": "docs_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_studex_composition",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_what_each_component_does",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_four_model_routing",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_where_gpt_5_belongs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
+      "target": "docs_studex_harness_autoresearch_mirofish_first_pilot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-harness-autoresearch-mirofish.md",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
       "source": "memory_readme",
       "target": "memory_readme_memory_contract",
       "relation": "contains",
@@ -412,6 +627,17 @@
       "weight": 1.0
     },
     {
+      "source": "tools_dictation_to_context",
+      "target": "tools_dictation_to_context_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/dictation_to_context.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "work_readme",
       "target": "work_readme_agent_work",
       "relation": "contains",
@@ -424,5 +650,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "53dd99bd4c782c5b5e414c1e8f2c7df3d812bb0a"
+  "built_at_commit": "693a5629cccbf1a9df84a2882f77478380f54770"
 }

@@ -158,6 +158,102 @@
       "norm_label": "agent work",
       "source_file": "work/README.md",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_findings",
+      "label": "Findings",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "findings",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_nexus_command_deck_html",
+      "label": "`nexus-command-deck.html`",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`nexus-command-deck.html`",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L44"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_nexus_command_deck_offline_html",
+      "label": "`nexus-command-deck-offline.html`",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`nexus-command-deck-offline.html`",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_studbot_integration_plan",
+      "label": "StudBot integration plan",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studbot integration plan",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_studex_master_os_html",
+      "label": "`studex-master-os.html`",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Findings",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`studex-master-os.html`",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06",
+      "label": "source-file-review-2026-10-06.md",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx source-file review \u2014 2026-10-06",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "source-file-review-2026-10-06.md",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_canonical_integration_decision",
+      "label": "Canonical integration decision",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx source-file review \u2014 2026-10-06",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "canonical integration decision",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L63"
+    },
+    {
+      "id": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
+      "label": "StudEx source-file review \u2014 2026-10-06",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "StudEx source-file review \u2014 2026-10-06",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studex source-file review \u2014 2026-10-06",
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L1"
     }
   ],
   "links": [
@@ -181,6 +277,83 @@
       "confidence_score": 1.0,
       "source_file": "docs/model-house.md",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06",
+      "target": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_findings",
+      "target": "docs_source_file_review_2026_10_06_studbot_integration_plan",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_findings",
+      "target": "docs_source_file_review_2026_10_06_nexus_command_deck_offline_html",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_findings",
+      "target": "docs_source_file_review_2026_10_06_nexus_command_deck_html",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_findings",
+      "target": "docs_source_file_review_2026_10_06_studex_master_os_html",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
+      "target": "docs_source_file_review_2026_10_06_findings",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_source_file_review_2026_10_06_studex_source_file_review_2026_10_06",
+      "target": "docs_source_file_review_2026_10_06_canonical_integration_decision",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/source-file-review-2026-10-06.md",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -250,5 +423,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "53dd99bd4c782c5b5e414c1e8f2c7df3d812bb0a"
 }
