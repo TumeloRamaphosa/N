@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "models/model-house.yaml": {
-    "mtime": 1791288272.2781672,
-    "seen": 1791288417.030685,
-    "ast_hash": "2dfe48c1e597421249de1f5965af881b",
+    "mtime": 1791292802.1663396,
+    "seen": 1791292819.035552,
+    "ast_hash": "af8da3e8d558cf93315511676f406939",
     "semantic_hash": ""
   },
   "obsidian/README.md": {
@@ -141,6 +141,12 @@
     "mtime": 1791288662.4963324,
     "seen": 1791288684.0770402,
     "ast_hash": "3b5719fa4eb194def3c2528f5d195c2a",
+    "semantic_hash": ""
+  },
+  "docs/minicpm-cactus-agent-compatibility.md": {
+    "mtime": 1791288766.7731967,
+    "seen": 1791292819.035434,
+    "ast_hash": "4e5bf6e56071c3f35595cfaca31aa843",
     "semantic_hash": ""
   }
 }

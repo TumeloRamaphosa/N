@@ -47,6 +47,27 @@ endpoints:
     host: macbook
     status: candidate_requires_benchmark
     notes: "LFM2.5 includes small text, thinking, vision and audio families. Check the specific checkpoint and commercial terms before client use."
+  - id: minicpm5-local
+    family: minicpm5
+    purpose: small_local_router_coding_and_tool_use
+    protocol: mlx_or_gguf_openai_compatible_adapter
+    host: macbook_or_phone_or_macmini
+    status: candidate_verified_family
+    notes: "Official MiniCPM5-1B and MiniCPM5-2B releases target on-device use. Use the official MLX conversion on Apple Silicon or verified GGUF through llama.cpp; record exact checkpoint and repeat-penalty settings."
+  - id: ornith-coding
+    family: ornith
+    purpose: local_coding_agent_and_orchestrator
+    protocol: ollama_or_llama_cpp_openai_compatible
+    host: macmini_or_gcp
+    status: candidate_macmini
+    notes: "Ornith 1.0 9B is the practical local family entry point; a reported Q6_K file is about 7.4 GB. Use it for coding/orchestration on a host with sufficient RAM, not as the phone default."
+  - id: cactus-edge-runtime
+    family: cactus-engine
+    purpose: mobile_edge_inference_vision_audio_rag_tools
+    protocol: native_c_ffi_flutter_kotlin_swift_python
+    host: phone_or_macbook
+    status: candidate_mobile_runtime
+    notes: "Cactus is an inference/runtime layer, not one model. Prebuilt bundles include selected Gemma, Qwen, Liquid, Whisper, Parakeet and embedding models. Arbitrary model conversion is experimental; use prebuilt Cactus-Compute bundles first."
   - id: perplexity-local
     family: pplx-portable
     purpose: local_orchestrator_and_search

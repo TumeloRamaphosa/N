@@ -705,6 +705,66 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_minicpm_cactus_agent_compatibility",
+      "label": "minicpm-cactus-agent-compatibility.md",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "MiniCPM5 and Cactus compatibility",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "minicpm-cactus-agent-compatibility.md",
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_minicpm_cactus_agent_compatibility_cactus",
+      "label": "Cactus",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "MiniCPM5 and Cactus compatibility",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "cactus",
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L24"
+    },
+    {
+      "id": "docs_minicpm_cactus_agent_compatibility_minicpm5",
+      "label": "MiniCPM5",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "MiniCPM5 and Cactus compatibility",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "minicpm5",
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_minicpm_cactus_agent_compatibility_minicpm5_and_cactus_compatibility",
+      "label": "MiniCPM5 and Cactus compatibility",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "MiniCPM5 and Cactus compatibility",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "minicpm5 and cactus compatibility",
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_minicpm_cactus_agent_compatibility_recommended_routing",
+      "label": "Recommended routing",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "MiniCPM5 and Cactus compatibility",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "recommended routing",
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L39"
+    },
+    {
       "id": "obsidian_readme",
       "label": "obsidian/README.md",
       "_origin": "ast",
@@ -1124,6 +1184,50 @@
       "confidence_score": 1.0,
       "source_file": "docs/local-model-selection.md",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_minicpm_cactus_agent_compatibility",
+      "target": "docs_minicpm_cactus_agent_compatibility_minicpm5_and_cactus_compatibility",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_minicpm_cactus_agent_compatibility_minicpm5_and_cactus_compatibility",
+      "target": "docs_minicpm_cactus_agent_compatibility_cactus",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_minicpm_cactus_agent_compatibility_minicpm5_and_cactus_compatibility",
+      "target": "docs_minicpm_cactus_agent_compatibility_minicpm5",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_minicpm_cactus_agent_compatibility_minicpm5_and_cactus_compatibility",
+      "target": "docs_minicpm_cactus_agent_compatibility_recommended_routing",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/minicpm-cactus-agent-compatibility.md",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -1755,5 +1859,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f01d226818d6df3763231daf9e0a412f580fbf12"
+  "built_at_commit": "7481ae051f5192c0b1561f50983b809995c86d02"
 }
