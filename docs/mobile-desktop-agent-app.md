@@ -120,3 +120,52 @@ The StudEx app should offer three selectable modes:
 Treat community “uncensored” checkpoints as untrusted candidates. Record the
 exact file hash, license, tokenizer, context limit and tool-call tests in the
 model house before making one available to agents.
+
+## GoClaw, ZeroClaw and ten agent profiles
+
+GoClaw is a Go gateway with REST/WebSocket access, provider adapters, teams,
+memory and security layers. Its desktop Lite edition is limited to five agents;
+the server edition is the better fit for a larger fleet. ZeroClaw is a small Rust
+binary with pluggable Ollama/OpenAI-compatible providers, HTTP/WebSocket gateway,
+ACP IDE integration and sandboxed tool execution. Both can sit behind the
+StudEx gateway, but they should not both become the fleet authority at the same
+time.
+
+Recommended layout:
+
+```text
+Mac mini VM or GCP/Orgo Linux host
+  studex-gateway
+    zeroclaw profile agent-01 ... agent-10   # isolated workspaces/configs
+    or goclaw server team                    # alternative fleet runtime
+    Ollama/llama.cpp/MLX adapter             # shared model endpoint
+    WebSocket + Tailscale                    # phone/desktop clients
+```
+
+Use separate workspaces, memory roots, model budgets and tool policies for each
+agent. Ten processes may share model weights through one gateway, but each needs
+its own session state and rate limits. Do not run ten autonomous gateways on a
+phone.
+
+## Connecting the phone
+
+- **Android:** connect USB, enable Developer Options and USB debugging, confirm
+  the computer fingerprint, then use `flutter devices` and `flutter run -d
+  <device-id>` for a development build. The release APK should be signed and
+  installed only after its checksum is recorded.
+- **iPhone:** connect USB, trust the Mac, enable Developer Mode, select a signed
+  development team in Xcode and run the Flutter iOS target. TestFlight is the
+  normal distribution path; arbitrary sideloading is limited by Apple’s signing
+  rules.
+- **WebSocket:** the mobile app opens one authenticated `wss://` connection to
+  the private gateway. Use Tailscale or an HTTPS reverse proxy; never expose a
+  raw unauthenticated gateway port.
+- **VMs:** keep Linux VMs on the Mac mini, GCP or Orgo. Android can use a limited
+  Linux userland such as Termux, but a phone is not a practical host for ten
+  full VMs or large model runtimes. The phone should run the UI, offline small
+  GGUF model and queued tasks.
+
+Kiro’s IDE, CLI, web and mobile surfaces are useful clients for the same task
+protocol, specs, skills, hooks and MCP tools; Kiro itself is not the local model
+runtime. Keep its project rules aligned with `agents/registry.yaml` and the
+StudEx gateway policy.

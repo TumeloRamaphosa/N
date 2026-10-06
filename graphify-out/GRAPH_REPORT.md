@@ -1,16 +1,16 @@
 # Graph Report - N  (2026-10-06)
 
 ## Corpus Check
-- 21 files · ~6,591 words
+- 21 files · ~6,955 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 81 nodes · 65 edges · 20 communities (12 shown, 8 thin omitted)
+- 83 nodes · 67 edges · 20 communities (12 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `88008feb`
+- Built from commit: `f01d2268`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,7 +37,7 @@
 - StudEx mobile and desktop agent app
 
 ## God Nodes (most connected - your core abstractions)
-1. `StudEx mobile and desktop agent app` - 7 edges
+1. `StudEx mobile and desktop agent app` - 9 edges
 2. `Storage, model and Linux migration plan` - 6 edges
 3. `StudEx Harness: AutoResearch + MiroFish` - 6 edges
 4. `Remote IDE and agent mesh` - 5 edges
@@ -101,16 +101,16 @@ Cohesion: 0.50
 Nodes (3): Offline voice for the agent fleet, Recommended tiers, Storage and Drive policy
 
 ### Community 19 - "StudEx mobile and desktop agent app"
-Cohesion: 0.25
-Nodes (7): Fully local GGUF mode, Offline and cloud modes, One task protocol, Platform adapters, Release plan, Shared architecture, StudEx mobile and desktop agent app
+Cohesion: 0.20
+Nodes (9): Connecting the phone, Fully local GGUF mode, GoClaw, ZeroClaw and ten agent profiles, Offline and cloud modes, One task protocol, Platform adapters, Release plan, Shared architecture (+1 more)
 
 ## Knowledge Gaps
-- **45 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+40 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 64 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **47 isolated node(s):** `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract`, `Current model-house status`, `Context inbox` (+42 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 66 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `dictation_to_context.sh script`, `hourly_runtime_cache_reset.sh script`, `Daily contract` to the rest of the system?**
-  _45 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _47 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -561,6 +561,102 @@
       "source_location": "L26"
     },
     {
+      "id": "docs_mobile_desktop_agent_app",
+      "label": "mobile-desktop-agent-app.md",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "mobile-desktop-agent-app.md",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_fully_local_gguf_mode",
+      "label": "Fully local GGUF mode",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fully local gguf mode",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L86"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_offline_and_cloud_modes",
+      "label": "Offline and cloud modes",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "offline and cloud modes",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L66"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_one_task_protocol",
+      "label": "One task protocol",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "one task protocol",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_platform_adapters",
+      "label": "Platform adapters",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "platform adapters",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_release_plan",
+      "label": "Release plan",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "release plan",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L75"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_shared_architecture",
+      "label": "Shared architecture",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "shared architecture",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "label": "StudEx mobile and desktop agent app",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "StudEx mobile and desktop agent app",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studex mobile and desktop agent app",
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L1"
+    },
+    {
       "id": "memory_readme",
       "label": "memory/README.md",
       "_origin": "ast",
@@ -1004,6 +1100,83 @@
       "confidence_score": 1.0,
       "source_file": "docs/local-model-selection.md",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_platform_adapters",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_one_task_protocol",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_offline_and_cloud_modes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_release_plan",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_shared_architecture",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_mobile_desktop_agent_app_studex_mobile_and_desktop_agent_app",
+      "target": "docs_mobile_desktop_agent_app_fully_local_gguf_mode",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/mobile-desktop-agent-app.md",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -1536,5 +1709,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7911118bb39e71f37ecbfb1ef326cd13fd7457b1"
+  "built_at_commit": "88008febfed031c243de2d0c4ff37a2f58c37105"
 }
