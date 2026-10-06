@@ -2,6 +2,14 @@ schema_version: 1
 policy: pin_every_model_by_source_checksum_runtime_and_license
 artifacts_root: external://approved-model-storage
 endpoints:
+  - id: omniroute-local
+    family: gateway
+    purpose: provider_routing_compression_mcp_a2a
+    protocol: openai_compatible
+    base_url: http://127.0.0.1:20128/v1
+    host: macbook_or_linux_vm
+    status: candidate_requires_isolated_test
+    notes: "Candidate MIT gateway. Keep bound to localhost/private Tailscale; verify provider credentials, compression fidelity and MCP scopes before production."
   - id: jev-style-local
     family: jev-style
     purpose: system-1_decision_routing
@@ -32,6 +40,20 @@ endpoints:
     host: pending
     status: experimental_not_installed
     notes: "Harness, not a model. DeepSeek-V3 is 671B total/37B active and is not a MacBook model; distilled 1.5B-70B variants are the local candidates. Run the harness in a least-privilege VM and connect through an adapter."
+  - id: lfm-local
+    family: liquid-lfm
+    purpose: low_latency_local_worker
+    protocol: ollama_or_gguf_or_vendor_runtime
+    host: macbook
+    status: candidate_requires_benchmark
+    notes: "LFM2.5 includes small text, thinking, vision and audio families. Check the specific checkpoint and commercial terms before client use."
+  - id: perplexity-local
+    family: pplx-portable
+    purpose: local_orchestrator_and_search
+    protocol: vendor_runtime
+    host: supported_nvidia_or_amd_machine
+    status: candidate_not_macbook_target
+    notes: "Perplexity Portable Computer advertises local PPLX/Qwen models on supported NVIDIA/AMD hardware; Sonar remains a hosted/API service."
 
 routing:
   decision_model: jev-style-local

@@ -52,5 +52,23 @@
     "seen": 1791284284.816982,
     "ast_hash": "8267b113ab113dfda7e4d5b00236a5b2",
     "semantic_hash": ""
+  },
+  "tools/dictation_to_context.sh": {
+    "mtime": 1791284735.6047018,
+    "seen": 1791284739.9776452,
+    "ast_hash": "55e37be085672dc8a44d1b7fb2f34652",
+    "semantic_hash": ""
+  },
+  "context/README.md": {
+    "mtime": 1791284735.8217926,
+    "seen": 1791284739.977655,
+    "ast_hash": "ad161bf914bb237dd0acc9575db3678e",
+    "semantic_hash": ""
+  },
+  "docs/studex-harness-autoresearch-mirofish.md": {
+    "mtime": 1791284735.2993908,
+    "seen": 1791284739.977659,
+    "ast_hash": "0866ac7ebc29ab6f06809c0bdb0fb6a7",
+    "semantic_hash": ""
   }
 }

@@ -64,6 +64,18 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_model_house_gateway_and_knowledge_layers",
+      "label": "Gateway and knowledge layers",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Model house integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "gateway and knowledge layers",
+      "source_file": "docs/model-house.md",
+      "source_location": "L13"
+    },
+    {
       "id": "docs_model_house_model_house_integration",
       "label": "Model house integration",
       "_origin": "ast",
@@ -85,7 +97,7 @@
       "node_kind": "heading",
       "norm_label": "rollout",
       "source_file": "docs/model-house.md",
-      "source_location": "L19"
+      "source_location": "L44"
     },
     {
       "id": "memory_readme",
@@ -392,6 +404,30 @@
       "norm_label": "dictation_to_context.sh script",
       "source_file": "tools/dictation_to_context.sh",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_local_model_selection",
+      "label": "local-model-selection.md",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "local-model-selection.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "local-model-selection.md",
+      "source_file": "docs/local-model-selection.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_local_model_selection_local_model_selection",
+      "label": "Local model selection",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "local-model-selection.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "local model selection",
+      "source_file": "docs/local-model-selection.md",
+      "source_location": "L1"
     }
   ],
   "links": [
@@ -403,6 +439,17 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "context/README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_local_model_selection",
+      "target": "docs_local_model_selection_local_model_selection",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/local-model-selection.md",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -419,13 +466,24 @@
     },
     {
       "source": "docs_model_house_model_house_integration",
+      "target": "docs_model_house_gateway_and_knowledge_layers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/model-house.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_model_house_model_house_integration",
       "target": "docs_model_house_rollout",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/model-house.md",
-      "source_location": "L19",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -650,5 +708,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "693a5629cccbf1a9df84a2882f77478380f54770"
+  "built_at_commit": "aefb68f037e184c5bc07b52fd23a27e259026497"
 }

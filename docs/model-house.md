@@ -10,6 +10,31 @@ The model house has three separate layers:
 3. **Agent layer:** Hermes, OpenClaw, Codex and the DeepSeek Harness call the
    adapter and retain tool permissions, memory scope and audit records.
 
+## Gateway and knowledge layers
+
+Use OmniRoute, if its isolated pilot passes, as the single OpenAI-compatible door
+for Hermes, OpenClaw, MiroFish and coding tools. Its documented endpoint is
+`http://127.0.0.1:20128/v1`; it also advertises MCP and A2A surfaces and a
+compression pipeline. Keep it bound to localhost or a private Tailscale network,
+scope its keys, and benchmark compression fidelity before enabling aggressive
+modes. OmniRoute's routing memory must not silently become the company memory.
+
+Use one authority per knowledge function:
+
+- **TencentDB Agent Memory:** governed chat memory, skills, LLM-Wiki and code-graph
+  assets when its RBAC and tenant boundaries pass review.
+- **Graphify / Code Graph:** repository structure and dependency relationships;
+  refresh it after code changes.
+- **Obsidian:** editable local business wiki and agent brains.
+- **Notion:** shared human-facing index and approvals, with links back to the
+  canonical Git/Obsidian records.
+- **MiroFish/Neo4j:** scenario graph and simulated-world state, kept separate from
+  authoritative company facts.
+
+This prevents duplicated facts and conflicting “memories.” The gateway retrieves
+from the approved memory layer; it does not decide which copy of a business fact is
+correct.
+
 The first safe connection is a local gateway that exposes health and usage data for
 each model. Hermes and OpenClaw should point to that gateway rather than loading
 model files directly. DeepSeek Harness can be tested as another client because its
