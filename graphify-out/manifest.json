@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "models/model-house.yaml": {
-    "mtime": 1791285164.7053556,
-    "seen": 1791285168.490081,
-    "ast_hash": "ce253be6f1c91235f59383b1ac41c2ff",
+    "mtime": 1791287979.1433425,
+    "seen": 1791288000.078086,
+    "ast_hash": "741dc272cacb7129b3afa14a73e4c844",
     "semantic_hash": ""
   },
   "obsidian/README.md": {
@@ -117,6 +117,12 @@
     "mtime": 1791287754.8438206,
     "seen": 1791287783.410413,
     "ast_hash": "cfb39d25ef53376774e796756eeeacba",
+    "semantic_hash": ""
+  },
+  "docs/model-house-agent-runtime-matrix.md": {
+    "mtime": 1791287978.9454923,
+    "seen": 1791288000.078079,
+    "ast_hash": "4c9958099ef580ca69c63f2907b30236",
     "semantic_hash": ""
   }
 }

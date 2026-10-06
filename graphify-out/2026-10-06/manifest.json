@@ -106,5 +106,17 @@
     "seen": 1791287652.8185768,
     "ast_hash": "70ea262b18ce4e417983e82f50b99e42",
     "semantic_hash": ""
+  },
+  "tools/studex-agent": {
+    "mtime": 1791287754.7195144,
+    "seen": 1791287783.410401,
+    "ast_hash": "ac79a21d6fa80d5bb0b65394e1fe1c08",
+    "semantic_hash": ""
+  },
+  "docs/studex-coding-agent-and-own-model.md": {
+    "mtime": 1791287754.8438206,
+    "seen": 1791287783.410413,
+    "ast_hash": "cfb39d25ef53376774e796756eeeacba",
+    "semantic_hash": ""
   }
 }

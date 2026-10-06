@@ -12,5 +12,7 @@
   "10": "fleet-and-remote-desktop.md",
   "11": "Cloud-first build policy",
   "12": "hourly_runtime_cache_reset.sh",
-  "13": "Remote IDE and agent mesh"
+  "13": "Remote IDE and agent mesh",
+  "14": "studex-agent",
+  "15": "StudEx coding agent and model"
 }

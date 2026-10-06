@@ -4,6 +4,54 @@
   "graph": {},
   "nodes": [
     {
+      "id": "tools_studex_agent_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "studex-agent",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "tools/studex-agent",
+      "source_location": "L52"
+    },
+    {
+      "id": "tools_studex_agent_now",
+      "label": "now()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "studex-agent",
+      "file_type": "code",
+      "norm_label": "now()",
+      "source_file": "tools/studex-agent",
+      "source_location": "L23"
+    },
+    {
+      "id": "tools_studex_agent_registry_agents",
+      "label": "registry_agents()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "studex-agent",
+      "file_type": "code",
+      "norm_label": "registry_agents()",
+      "source_file": "tools/studex-agent",
+      "source_location": "L11"
+    },
+    {
+      "id": "tools_studex_agent_run_agent",
+      "label": "run_agent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "studex-agent",
+      "file_type": "code",
+      "norm_label": "run_agent()",
+      "source_file": "tools/studex-agent",
+      "source_location": "L25"
+    },
+    {
       "id": "readme",
       "label": "README.md",
       "_origin": "ast",
@@ -272,6 +320,65 @@
       "norm_label": "shared hosts",
       "source_file": "docs/remote-ide-agent-mesh.md",
       "source_location": "L14"
+    },
+    {
+      "id": "tools_studex_agent",
+      "label": "studex-agent",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "studex-agent",
+      "file_type": "code",
+      "norm_label": "studex-agent",
+      "source_file": "tools/studex-agent",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_coding_agent_and_own_model",
+      "label": "studex-coding-agent-and-own-model.md",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "StudEx coding agent and model",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "studex-coding-agent-and-own-model.md",
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_coding_agent_and_own_model_building_our_model",
+      "label": "Building our model",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "StudEx coding agent and model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "building our model",
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "docs_studex_coding_agent_and_own_model_studex_coding_agent_and_model",
+      "label": "StudEx coding agent and model",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "StudEx coding agent and model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "studex coding agent and model",
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_studex_coding_agent_and_own_model_what_we_own",
+      "label": "What we own",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "StudEx coding agent and model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what we own",
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L3"
     },
     {
       "id": "memory_readme",
@@ -606,6 +713,54 @@
   ],
   "links": [
     {
+      "source": "tools_studex_agent_main",
+      "target": "tools_studex_agent_registry_agents",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tools/studex-agent",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent_main",
+      "target": "tools_studex_agent_run_agent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tools/studex-agent",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent_run_agent",
+      "target": "tools_studex_agent_registry_agents",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tools/studex-agent",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent_run_agent",
+      "target": "tools_studex_agent_now",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tools/studex-agent",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
       "source": "context_readme",
       "target": "context_readme_context_inbox",
       "relation": "contains",
@@ -837,6 +992,39 @@
       "weight": 1.0
     },
     {
+      "source": "docs_studex_coding_agent_and_own_model",
+      "target": "docs_studex_coding_agent_and_own_model_studex_coding_agent_and_model",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_coding_agent_and_own_model_studex_coding_agent_and_model",
+      "target": "docs_studex_coding_agent_and_own_model_what_we_own",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_studex_coding_agent_and_own_model_studex_coding_agent_and_model",
+      "target": "docs_studex_coding_agent_and_own_model_building_our_model",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/studex-coding-agent-and-own-model.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
       "source": "docs_studex_harness_autoresearch_mirofish",
       "target": "docs_studex_harness_autoresearch_mirofish_studex_harness_autoresearch_mirofish",
       "relation": "contains",
@@ -980,6 +1168,50 @@
       "weight": 1.0
     },
     {
+      "source": "tools_studex_agent",
+      "target": "tools_studex_agent_registry_agents",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/studex-agent",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent",
+      "target": "tools_studex_agent_now",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/studex-agent",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent",
+      "target": "tools_studex_agent_run_agent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/studex-agent",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_studex_agent",
+      "target": "tools_studex_agent_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tools/studex-agent",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
       "source": "work_readme",
       "target": "work_readme_agent_work",
       "relation": "contains",
@@ -992,5 +1224,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "df1b617ded978d3a9ed44beec6d62039d6532e8a"
+  "built_at_commit": "1f75ec3142d29e41562dc2f6baf4eb23c6af4918"
 }

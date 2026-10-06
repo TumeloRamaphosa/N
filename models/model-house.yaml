@@ -61,3 +61,33 @@ routing:
   multimodal_model: pending
   fallback: pending
   rule: "Agents call an adapter; adapters expose health, model_id, checksum, modality and token usage."
+
+integrations:
+  - id: page-agent
+    repository: https://github.com/alibaba/page-agent
+    runtime: browser-dom-agent
+    model_adapter: openai_compatible
+    placement: macbook_browser_with_macmini_gateway
+    local_model_tier: 3b_to_7b_instruction_following
+    multimodal_required: false
+  - id: odysseus
+    repository: https://github.com/odysseus-dev/odysseus
+    runtime: self_hosted_workspace
+    model_adapter: ollama_or_openai_compatible
+    placement: macmini_vm_or_gcp
+    local_model_tier: 7b_to_14b_plus_embeddings
+    multimodal_required: optional
+  - id: denchclaw
+    repository: https://github.com/DenchHQ/DenchClaw
+    runtime: openclaw_crm_gateway
+    model_adapter: openclaw_provider_config
+    placement: macmini_openclaw_profile
+    local_model_tier: 7b_to_14b_drafting
+    multimodal_required: optional
+  - id: cashclaw
+    repository: https://github.com/ertugrulakben/cashclaw
+    runtime: openclaw_economy_guard
+    model_adapter: openai_compatible_wrapper
+    placement: macmini_or_cloud_worker
+    local_model_tier: gateway_selected
+    multimodal_required: false
