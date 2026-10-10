@@ -34,14 +34,16 @@ See `docs/model-house.md` for the adapter boundary and rollout order.
 
 ## Chief-of-staff trio
 
-Five setup agents report to **Robusca** (`email-agent`, `notion-agent`,
-`meeting-agent`, `vercel-agent`, `cloudflare-agent`). Robusca coordinates them
-and owns escalation.
+`email-agent`, `notion-agent`, and `meeting-agent` report to **Robusca**, who
+coordinates them and owns escalation.
 
 `meeting-agent` turns meetings into structured records and routes follow-ups to
 `email-agent`, which prepares drafts for human approval before anything is sent.
 `notion-agent` reflects status and briefs in the Notion Command Centre.
 
-The **deployment team** (`vercel-agent` and `cloudflare-agent`) are standalone
-agents that support `claudio` on hosting and edge work. Live deploys and DNS
-changes require Agent Chief Lord approval before execution.
+The **deployment team** (`vercel-agent`, `cloudflare-agent`, `gcp-agent`, and
+`vercel-foreman`) are standalone agents that support `claudio`. `vercel-foreman`
+oversees `vercel-agent`; `vercel-agent` reports to the foreman. `cloudflare-agent`,
+`gcp-agent`, and `vercel-foreman` report to Robusca. See `docs/deployment-routing.md`
+for platform boundaries. Every live deploy, DNS change or spend requires Agent Chief
+Lord approval before execution.
