@@ -80,3 +80,21 @@ agents:
     obsidian_vault: pending
     skills: [ponytail, headroom, cognitive, graphify]
     reports_to: robusca
+  - id: vercel-agent
+    role: vercel_deployments
+    status: setup_pending
+    work_dir: work/vercel-agent
+    memory_dir: memory/vercel-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    works_with: claudio
+    reports_to: robusca
+  - id: cloudflare-agent
+    role: cloudflare_edge
+    status: setup_pending
+    work_dir: work/cloudflare-agent
+    memory_dir: memory/cloudflare-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    works_with: claudio
+    reports_to: robusca
