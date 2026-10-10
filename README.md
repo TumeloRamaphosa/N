@@ -21,11 +21,21 @@ shared live filesystem or a place to store secrets.
 
 ## Linked repos
 
-`repos/registry.yaml` lists external repositories agents clone or read at runtime
-using their own credentials and host access. This repo does not use Git submodules
-and does not copy content from those repositories. Private meeting notes, keys and
-other sensitive material stay in the linked repos and vaults—never in this public
-control plane.
+`repos/registry.yaml` is a manifest of linked repositories. Each entry is a card with
+`what_it_is`, `what_it_does`, `maker`, `licence`, `recommendation`, plus `location`,
+`visibility`, `used_by`, and `access: read`. Agents clone or read these repos at runtime
+with their own credentials. This repo does not use submodules and does not copy content
+from linked repos; private material never lands here.
+
+| id | what_it_is | recommendation (summary) |
+|----|------------|---------------------------|
+| `openjarvis` | Local-first personal AI framework (Stanford OpenJarvis) | Trial on the Mac mini; sandboxed, no keys |
+| `meetings-vault` | Private meetings repo and Obsidian vault | Source of truth for meeting records |
+| `lifecycle-innovations` | TBC | Awaiting full URL from Agent Chief Lord |
+| `agents-office` | 3D office routing tasks across 35 agents | Internal Mac mini trial only; not for StudBot (licence) |
+
+Licence and maker for public repos are verified from upstream `LICENSE` / README when
+reachable; otherwise fields are `TBC`. See the manifest for full card text.
 
 ## Current model-house status
 
