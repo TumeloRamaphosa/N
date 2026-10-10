@@ -1,0 +1,21 @@
+schema_version: 1
+repository_role: linked_repo_manifest
+repositories:
+  - id: openjarvis
+    purpose: personal-AI assistant framework (Stanford OpenJarvis) for the Mac mini central command
+    location: https://github.com/open-jarvis/OpenJarvis
+    visibility: public
+    used_by: [robusca, dc-engineer]
+    access: read
+  - id: lifecycle-innovations
+    purpose: Lifecycle-Innovations product and operations codebase
+    location: TBC
+    visibility: private
+    used_by: [robusca]
+    access: read
+  - id: meetings-vault
+    purpose: meetings repo and Obsidian meetings vault (Meetings--coms)
+    location: TBC
+    visibility: private
+    used_by: [meeting-agent, email-agent, notion-agent, robusca]
+    access: read

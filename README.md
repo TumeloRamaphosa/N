@@ -19,6 +19,14 @@ volatile runtime caches stay on their host or in approved artifact storage.
 The repository is the source of truth for definitions and history. It is not a
 shared live filesystem or a place to store secrets.
 
+## Linked repos
+
+`repos/registry.yaml` lists external repositories agents clone or read at runtime
+using their own credentials and host access. This repo does not use Git submodules
+and does not copy content from those repositories. Private meeting notes, keys and
+other sensitive material stay in the linked repos and vaults—never in this public
+control plane.
+
 ## Current model-house status
 
 - Jev-Style 2B is already available locally through the MLX service recorded in
