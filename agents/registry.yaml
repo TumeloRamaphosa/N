@@ -62,3 +62,21 @@ agents:
     memory_dir: memory/email-agent
     obsidian_vault: pending
     skills: [ponytail, headroom, cognitive, graphify]
+    reads_from: ['meetings-repo (Meetings--coms)', meetings-vault]
+    reports_to: robusca
+  - id: notion-agent
+    role: notion_command_centre
+    status: setup_pending
+    work_dir: work/notion-agent
+    memory_dir: memory/notion-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    reports_to: robusca
+  - id: meeting-agent
+    role: meetings_and_vault
+    status: setup_pending
+    work_dir: work/meeting-agent
+    memory_dir: memory/meeting-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    reports_to: robusca

@@ -1,0 +1,1 @@
+Notion agent: maintains the Studex Command Centre in Notion: the daily one-pager, a page per business per day, the CEO 09:00/17:00 briefs and the agent dashboard (token budgets, skills). Reports to Robusca (chief of staff).

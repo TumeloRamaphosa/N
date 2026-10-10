@@ -1,0 +1,1 @@
+Meeting agent: works with the meetings repo and meetings vault; turns each meeting into a record (decisions, actions, owners) and hands follow-ups to email-agent and status to notion-agent. Reports to Robusca.

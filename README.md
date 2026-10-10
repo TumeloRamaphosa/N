@@ -31,3 +31,10 @@ shared live filesystem or a place to store secrets.
   not installed or trusted as a production authority yet.
 
 See `docs/model-house.md` for the adapter boundary and rollout order.
+
+## Chief-of-staff trio
+
+`meeting-agent` turns meetings into structured records and routes follow-ups to
+`email-agent`, which prepares drafts for human approval before anything is sent.
+`notion-agent` reflects status and briefs in the Notion Command Centre. **Robusca**
+coordinates the trio and owns escalation across agents.
