@@ -55,3 +55,10 @@ agents:
     work_dir: work/agricultural-department
     memory_dir: memory/agricultural-department
     obsidian_vault: pending
+  - id: email-agent
+    role: email_drafting_and_outreach
+    status: setup_pending
+    work_dir: work/email-agent
+    memory_dir: memory/email-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
