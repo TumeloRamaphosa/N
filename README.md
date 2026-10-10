@@ -42,6 +42,6 @@ and owns escalation.
 `email-agent`, which prepares drafts for human approval before anything is sent.
 `notion-agent` reflects status and briefs in the Notion Command Centre.
 
-`vercel-agent` and `cloudflare-agent` handle hosting and edge operations with
-`claudio`; production deploys, DNS changes, domains and spend require Agent Chief
-Lord approval before execution.
+The **deployment team** (`vercel-agent` and `cloudflare-agent`) are standalone
+agents that support `claudio` on hosting and edge work. Live deploys and DNS
+changes require Agent Chief Lord approval before execution.

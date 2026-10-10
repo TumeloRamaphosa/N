@@ -87,7 +87,8 @@ agents:
     memory_dir: memory/vercel-agent
     obsidian_vault: pending
     skills: [ponytail, headroom, cognitive, graphify]
-    works_with: claudio
+    team: deployment-team
+    supports: claudio
     reports_to: robusca
   - id: cloudflare-agent
     role: cloudflare_edge
@@ -96,5 +97,6 @@ agents:
     memory_dir: memory/cloudflare-agent
     obsidian_vault: pending
     skills: [ponytail, headroom, cognitive, graphify]
-    works_with: claudio
+    team: deployment-team
+    supports: claudio
     reports_to: robusca
