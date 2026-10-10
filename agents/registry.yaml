@@ -49,3 +49,9 @@ agents:
     work_dir: work/nexus-server
     memory_dir: memory/nexus-server
     obsidian_vault: pending
+  - id: agricultural-department
+    role: agriculture_trade_and_market_access
+    status: setup_pending
+    work_dir: work/agricultural-department
+    memory_dir: memory/agricultural-department
+    obsidian_vault: pending
