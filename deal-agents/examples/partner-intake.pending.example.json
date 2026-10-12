@@ -1,0 +1,14 @@
+{
+  "_comment": "FICTIONAL EXAMPLE — demonstrates compliance lock when Pending.",
+  "company": "[FICTIONAL] Pending Partner Co",
+  "country": "Example jurisdiction",
+  "contacts": "example@example.invalid",
+  "owners": "Fictional owner",
+  "offer": "Example offering",
+  "want": "Example ask",
+  "targets": "Rwanda",
+  "timeline": "TBD",
+  "budget": "TBD",
+  "docs": "N/A",
+  "screening": "Pending"
+}
