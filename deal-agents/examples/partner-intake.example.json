@@ -1,0 +1,21 @@
+{
+  "_comment": "FICTIONAL EXAMPLE ONLY — not a real partner.",
+  "id": "demo-cleared-approved",
+  "created": "2026-10-12T00:00:00.000Z",
+  "company": "[FICTIONAL] Horizon Grid Services Ltd",
+  "country": "Republic of Exampleland (fictional)",
+  "contacts": "Example Contact A (Partnerships Lead, example-a@example.invalid)",
+  "owners": "Example Owner One; Example Owner Two (fictional)",
+  "offer": "Field maintenance tooling and training programs for distributed energy sites",
+  "want": "Pilot co-delivery in one African market with Studex introductions and localization support",
+  "targets": "Kenya, Ghana",
+  "timeline": "Pilot planning in Q1 example year; go-live Q2 example year",
+  "budget": "Partner-indicated range: internal review only [no amounts in public repo]",
+  "docs": "https://example.invalid/fictional-capability-deck",
+  "screening": "Cleared",
+  "screenNote": "Fictional clearance record for demo pipeline",
+  "screenedBy": "Robusca (example operator)",
+  "screenedAt": "2026-10-12T00:00:00.000Z",
+  "approved": true,
+  "approvedAt": "2026-10-12T01:00:00.000Z"
+}
