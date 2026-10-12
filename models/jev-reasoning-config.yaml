@@ -1,0 +1,153 @@
+# JEV Ultra-Fast Reasoning Configuration
+# Integrates jev-ultrafast for real-time agent decision making
+
+jev_configuration:
+  version: "1.0"
+  provider: "browser-use/jev-ultrafast"
+
+  core_capabilities:
+    - reasoning_engine: true
+    - browser_automation: true
+    - real_time_decision_making: true
+    - self_correction: true
+    - learning_enabled: true
+    - continuous_monitoring: true
+
+  agent_reasoning_rules:
+    robusca:
+      type: "compliance_reasoning"
+      decision_framework:
+        - "PEP/Sanctions check"
+        - "AML risk score"
+        - "Regulatory jurisdiction"
+        - "GDPR compliance"
+        - "Final recommendation"
+      auto_approve_threshold: 85
+      escalation_threshold: 50
+      browser_tasks:
+        - "Search sanctions lists"
+        - "Verify business registration"
+        - "Check regulatory status"
+
+    chronos:
+      type: "strategy_reasoning"
+      decision_framework:
+        - "Market data collection"
+        - "Historical trend analysis"
+        - "Pattern recognition"
+        - "Forecast generation"
+        - "Opportunity scoring"
+      auto_recommend_threshold: 80
+      browser_tasks:
+        - "Monitor commodity exchanges"
+        - "Track 20+ commodity sites"
+        - "Extract real-time pricing"
+        - "Analyze competitor moves"
+      monitoring_interval: "15_minutes"
+
+    codex:
+      type: "technical_reasoning"
+      decision_framework:
+        - "Infrastructure requirements"
+        - "Integration feasibility"
+        - "Deployment risk assessment"
+        - "Cost optimization"
+        - "Architecture recommendation"
+      browser_tasks:
+        - "Check cloud provider costs"
+        - "Verify API documentation"
+        - "Test integration endpoints"
+
+    hermes:
+      type: "sales_reasoning"
+      decision_framework:
+        - "Price analysis"
+        - "Margin calculation"
+        - "Deal viability"
+        - "Negotiation strategy"
+        - "Execution readiness"
+      auto_execute_threshold: 85
+      browser_tasks:
+        - "Search supplier catalogs"
+        - "Verify buyer demand"
+        - "Submit trade orders"
+        - "Track deal status"
+
+    openclaw:
+      type: "operations_reasoning"
+      decision_framework:
+        - "Logistics requirements"
+        - "Carrier availability"
+        - "Route optimization"
+        - "Cost assessment"
+        - "Execution plan"
+      browser_tasks:
+        - "Track shipments"
+        - "Monitor port status"
+        - "Verify delivery confirmations"
+
+    naledi_prime:
+      type: "executive_reasoning"
+      decision_framework:
+        - "Strategic alignment"
+        - "Risk assessment"
+        - "Opportunity value"
+        - "Partnership fit"
+        - "Final approval"
+      requires_human_review: false
+      browser_tasks:
+        - "Review partner profiles"
+        - "Verify event invitations"
+        - "Manage calendar"
+
+  reasoning_loop:
+    max_iterations: 3
+    timeout_seconds: 60
+    learning_enabled: true
+    decision_logging: true
+    outcome_tracking: true
+    continuous_improvement: true
+
+  browser_automation:
+    headless_mode: true
+    screenshot_on_error: true
+    data_extraction: true
+    form_filling: true
+    click_simulation: true
+    scroll_handling: true
+    wait_strategy: "smart_wait"
+    timeout: 30
+
+  performance_targets:
+    robusca_decision_time: "<2_seconds"
+    chronos_analysis_time: "<5_seconds"
+    codex_design_time: "<10_seconds"
+    hermes_negotiation_time: "<3_seconds"
+    openclaw_planning_time: "<5_seconds"
+    naledi_approval_time: "<5_minutes"
+
+  error_handling:
+    retry_attempts: 3
+    fallback_to_human: true
+    error_logging: true
+    alert_on_failure: true
+
+  integration:
+    google_drive: "auto_save_decisions"
+    obsidian: "auto_log_reasoning"
+    supabase: "store_metadata"
+    slack: "notify_on_decision"
+    agentmail: "send_decision_summary"
+
+  security:
+    credentials_vault: true
+    data_encryption: true
+    audit_logging: true
+    compliance_mode: true
+
+  monitoring:
+    decision_accuracy: true
+    reasoning_quality: true
+    execution_success_rate: true
+    error_rate: true
+    performance_metrics: true

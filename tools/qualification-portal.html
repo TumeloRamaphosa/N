@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDEX Partnership Qualification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --dark: #1A1A2E;
+            --accent: #FF6B35;
+            --success: #2ECC71;
+            --white: #FFFFFF;
+            --gray: #F5F5F5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--dark) 0%, #0F0F1E 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: var(--accent);
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .stage-indicator {
+            background: var(--gray);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .stage-indicator span {
+            color: var(--accent);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #E0E0E0;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .nda-box {
+            background: var(--gray);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            border-left: 4px solid var(--gold);
+        }
+
+        .nda-box h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .nda-box p {
+            color: #666;
+            font-size: 0.85em;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .nda-box ul {
+            margin-left: 20px;
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .nda-box li {
+            margin-bottom: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: var(--gray);
+            border-radius: 6px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            font-weight: 500;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 14px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, #C9A227 100%);
+            color: var(--dark);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--dark);
+            border: 2px solid var(--dark);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gray);
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            display: none;
+        }
+
+        .message.success {
+            background: #D4EDDA;
+            color: #155724;
+            display: block;
+        }
+
+        .message.error {
+            background: #F8D7DA;
+            color: #721C24;
+            display: block;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .stage {
+            display: none;
+        }
+
+        .stage.active {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #E0E0E0;
+            border-radius: 2px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gold);
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .success-page {
+            text-align: center;
+            display: none;
+        }
+
+        .success-page.active {
+            display: block;
+        }
+
+        .success-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .success-page h2 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .success-page p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .next-steps {
+            background: var(--gray);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .next-steps h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .next-steps ol {
+            margin-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .button-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- STAGE 1: NDA -->
+            <div class="stage active" id="stage-nda">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+
+                <header>
+                    <div class="tagline">⚖️ Legal Clarity First</div>
+                    <h1>STUDEX Partnership</h1>
+                    <p class="subtitle">South African Governed • AI-Powered • Results-Driven</p>
+                </header>
+
+                <div class="stage-indicator">
+                    STAGE <span>1 of 3</span>: Non-Disclosure Agreement
+                </div>
+
+                <div id="nda-message" class="message"></div>
+
+                <p style="color: #666; margin-bottom: 15px; line-height: 1.6;">
+                    Before we discuss partnership, we need legal clarity. This NDA protects you as much as us.
+                </p>
+
+                <div class="nda-box">
+                    <h3>STUDEX MUTUAL NON-DISCLOSURE AGREEMENT</h3>
+                    <p><strong>Governed by South African Law</strong></p>
+                    <p style="margin-top: 10px;">Both parties agree to maintain strict confidentiality of:</p>
+                    <ul>
+                        <li>Trade secrets and business strategies</li>
+                        <li>Pricing models and financial terms</li>
+                        <li>Partner network information</li>
+                        <li>Technical specifications and systems</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Term:</strong> 3 years post-signature</p>
+                    <p><strong>Dispute Resolution:</strong> Arbitration (South Africa)</p>
+                    <p><strong>IP Ownership:</strong> Each party retains their own IP. Joint creations: 50/50</p>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="nda-agree">
+                    <label for="nda-agree">I have read and agree to the NDA terms</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="company-name">Company Name *</label>
+                    <input type="text" id="company-name" placeholder="Your company">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-name">Your Name *</label>
+                    <input type="text" id="contact-name" placeholder="Full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email *</label>
+                    <input type="email" id="contact-email" placeholder="you@company.com">
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="resetForm()">Clear</button>
+                    <button class="btn-primary" onclick="signNDA()" id="btn-sign-nda">Sign & Continue</button>
+                </div>
+            </div>
+
+            <!-- STAGE 2: Quick Qualification -->
+            <div class="stage" id="stage-qualification">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 33%"></div>
+                </div>
+
+                <header>
+                    <div class="tagline">🎯 Quick Qualification</div>
+                    <h1>Tell Us About You</h1>
+                    <p class="subtitle">3 questions. 5 minutes. Serious answers only.</p>
+                </header>
+
+                <div class="stage-indicator">
+                    STAGE <span>2 of 3</span>: Partnership Fit
+                </div>
+
+                <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">
+                    Your NDA is signed. Now let's see if we're aligned. We don't waste time on mismatches.
+                </p>
+
+                <div class="form-group">
+                    <label for="business-type">What's your primary business? *</label>
+                    <select id="business-type" required>
+                        <option value="">-- Select --</option>
+                        <option value="infrastructure">Infrastructure (DC, power, telecom)</option>
+                        <option value="technology">Technology (AI, software, platforms)</option>
+                        <option value="logistics">Logistics (shipping, supply chain)</option>
+                        <option value="finance">Finance (banking, investment)</option>
+                        <option value="commodities">Commodities (trading, export)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="african-interest">Why interested in African markets? *</label>
+                    <textarea id="african-interest" placeholder="Be specific. We value clarity."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="commitment-level">What level of commitment are you prepared for? *</label>
+                    <select id="commitment-level" required>
+                        <option value="">-- Select --</option>
+                        <option value="explore">Explore (advisory, <$25K)</option>
+                        <option value="engaged">Engaged (partnership, $25K-$100K)</option>
+                        <option value="committed">Committed (deep integration, $100K+)</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="backToNDA()">Back</button>
+                    <button class="btn-primary" onclick="submitQualification()" id="btn-submit-qual">Next Stage</button>
+                </div>
+            </div>
+
+            <!-- STAGE 3: Commitment & Event Access -->
+            <div class="stage" id="stage-commitment">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 66%"></div>
+                </div>
+
+                <header>
+                    <div class="tagline">🎯 Show Your Commitment</div>
+                    <h1>Partnership Levels</h1>
+                    <p class="subtitle">Choose your path. Meet the president.</p>
+                </header>
+
+                <div class="stage-indicator">
+                    STAGE <span>3 of 3</span>: Commitment & Event Access
+                </div>
+
+                <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">
+                    Commitment signals seriousness. Your choice unlocks partnership AND presidential access.
+                </p>
+
+                <div style="background: linear-gradient(135deg, var(--dark) 0%, #0F0F1E 100%); padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 2px solid var(--gold);">
+                    <p style="color: var(--gold); font-weight: 600; margin-bottom: 10px; font-size: 1.1em;">🏌️ EXCLUSIVE PRESIDENTIAL EVENT</p>
+                    <p style="color: var(--white); font-size: 0.95em; margin-bottom: 8px;"><strong>Golf & Dinner with President Cyril Ramaphosa</strong></p>
+                    <p style="color: #CCC; font-size: 0.9em; margin-bottom: 8px;">
+                        Phala Phala • Luxury accommodations • Private dinner • Breakfast
+                    </p>
+                    <p style="color: #AAA; font-size: 0.85em;">
+                        Limited to 23 guests. Only STUDEX partners invited.
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label for="commitment-choice">Select Your Partnership Level *</label>
+                    <select id="commitment-choice" required onchange="updateCommitmentDetails()">
+                        <option value="">-- Select --</option>
+                        <option value="golf">🏌️ Golf Day Sponsor - $25K (+ event access)</option>
+                        <option value="conference">📊 Strategic Conference - $50K (+ 5-country tour + president meeting)</option>
+                        <option value="sovereign">👑 Sovereign Partnership - $100K+ (+ board seat + custom terms)</option>
+                    </select>
+                </div>
+
+                <div id="commitment-details" style="background: var(--gray); padding: 15px; border-radius: 8px; margin-bottom: 20px; display: none;">
+                    <p id="details-text" style="color: #666; line-height: 1.6;"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-attendance">Will you attend the event? *</label>
+                    <select id="event-attendance" required>
+                        <option value="">-- Select --</option>
+                        <option value="yes">Yes, confirm my attendance</option>
+                        <option value="maybe">Maybe (decide later)</option>
+                        <option value="no">Not interested</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ready-to-commit">
+                    <label for="ready-to-commit">I'm ready to commit to this partnership level</label>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="backToQualification()">Back</button>
+                    <button class="btn-primary" onclick="submitCommitment()" id="btn-submit-commitment">Complete & Commit</button>
+                </div>
+            </div>
+
+            <!-- SUCCESS PAGE -->
+            <div class="success-page" id="success-page">
+                <div class="success-icon">✅</div>
+                <h2>You're Qualified</h2>
+                <p>Your partnership qualification is complete.</p>
+
+                <div class="next-steps">
+                    <h3>✅ You're Invited to the Presidential Event</h3>
+                    <ol>
+                        <li><strong>NDA Signed</strong> - Legal protection secured ✓</li>
+                        <li><strong>Partnership Tier Confirmed</strong> - Event access unlocked</li>
+                        <li><strong>Presidential Invitation Sent</strong> - Golf & dinner with President Ramaphosa</li>
+                        <li><strong>Phala Phala Booking Confirmed</strong> - Your luxury suite reserved</li>
+                        <li><strong>CEO Call Scheduled</strong> - Naledi-Prime within 24 hours</li>
+                        <li><strong>90-Day Roadmap</strong> - Custom partnership strategy</li>
+                    </ol>
+                </div>
+
+                <p style="color: var(--accent); font-weight: 600; margin-top: 20px;">
+                    No calls. No emails. Just results.
+                </p>
+
+                <p style="color: #666; font-size: 0.9em; margin-top: 10px;">
+                    Your event invitation and call details will arrive within 2 hours.
+                </p>
+
+                <button class="btn-primary" style="margin-top: 20px; width: 100%;" onclick="window.location.reload()">Start Over</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Stage tracking
+        let currentStage = 1;
+        let formData = {};
+
+        // Stage 1: Sign NDA
+        function signNDA() {
+            const agree = document.getElementById('nda-agree').checked;
+            const company = document.getElementById('company-name').value.trim();
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+
+            if (!agree || !company || !name || !email) {
+                showMessage('nda-message', 'Please complete all fields and agree to the NDA', 'error');
+                return;
+            }
+
+            formData.company = company;
+            formData.name = name;
+            formData.email = email;
+            formData.ndaSigned = new Date().toISOString();
+
+            // Simulate saving to Google Drive
+            console.log('NDA signed and would be saved to Google Drive:', formData);
+
+            showMessage('nda-message', '✅ NDA signed successfully!', 'success');
+
+            setTimeout(() => {
+                document.getElementById('stage-nda').classList.remove('active');
+                document.getElementById('stage-qualification').classList.add('active');
+                updateProgress(33);
+            }, 500);
+        }
+
+        // Stage 2: Qualification
+        function submitQualification() {
+            const businessType = document.getElementById('business-type').value;
+            const interest = document.getElementById('african-interest').value.trim();
+            const commitment = document.getElementById('commitment-level').value;
+
+            if (!businessType || !interest || !commitment) {
+                alert('Please complete all fields');
+                return;
+            }
+
+            formData.businessType = businessType;
+            formData.africaInterest = interest;
+            formData.commitmentLevel = commitment;
+
+            document.getElementById('stage-qualification').classList.remove('active');
+            document.getElementById('stage-commitment').classList.add('active');
+            updateProgress(66);
+        }
+
+        // Stage 3: Commitment
+        function updateCommitmentDetails() {
+            const choice = document.getElementById('commitment-choice').value;
+            const details = document.getElementById('commitment-details');
+            const detailsText = document.getElementById('details-text');
+
+            const descriptions = {
+                golf: '🏌️ <strong>Golf Day Sponsor</strong><br>$25,000 one-time commitment<br><span style="color: var(--accent);">🎉 PRESIDENT\'S GOLF DAY + PHALA PHALA</span><br>• VIP access to presidential golf event<br>• Luxury accommodation<br>• Meet global STUDEX partners<br>• Naledi-Prime personal attention',
+                conference: '📊 <strong>Strategic Conference</strong><br>$50,000 one-time commitment<br><span style="color: var(--accent);">🎉 PRESIDENT\'S GOLF DAY + PRIVATE DINNER + 5-COUNTRY TOUR</span><br>• Golf & private dinner with President Ramaphosa<br>• Phala Phala luxury suite<br>• 5-country expansion leadership tour<br>• Private strategy summit with board',
+                sovereign: '👑 <strong>Sovereign Partnership</strong><br>$100K+ one-time + $50K/month<br><span style="color: var(--accent);">🎉 PRESIDENT\'S GOLF & DINNER + BOARD ACCESS</span><br>• Guaranteed presidential golf & dinner<br>• Phala Phala multi-night stay<br>• Board seat (quarterly meetings)<br>• Exclusive African territory<br>• Equity participation option'
+            };
+
+            if (choice) {
+                detailsText.innerHTML = descriptions[choice];
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function submitCommitment() {
+            const choice = document.getElementById('commitment-choice').value;
+            const attendance = document.getElementById('event-attendance').value;
+            const ready = document.getElementById('ready-to-commit').checked;
+
+            if (!choice || !attendance || !ready) {
+                alert('Please complete all fields and confirm commitment');
+                return;
+            }
+
+            formData.commitmentTier = choice;
+            formData.eventAttendance = attendance;
+            formData.committed = new Date().toISOString();
+
+            // Log data (in production, send to backend)
+            console.log('Final submission:', formData);
+
+            // Show success page
+            document.getElementById('stage-commitment').classList.remove('active');
+            document.getElementById('success-page').classList.add('active');
+            updateProgress(100);
+
+            // In production, you would:
+            // 1. Save to Google Drive
+            // 2. Send to Supabase
+            // 3. Trigger Naledi-Prime calendar invite
+            // 4. Send event invitation
+        }
+
+        // Navigation
+        function backToNDA() {
+            document.getElementById('stage-qualification').classList.remove('active');
+            document.getElementById('stage-nda').classList.add('active');
+            updateProgress(0);
+        }
+
+        function backToQualification() {
+            document.getElementById('stage-commitment').classList.remove('active');
+            document.getElementById('stage-qualification').classList.add('active');
+            updateProgress(33);
+        }
+
+        function resetForm() {
+            document.getElementById('nda-agree').checked = false;
+            document.getElementById('company-name').value = '';
+            document.getElementById('contact-name').value = '';
+            document.getElementById('contact-email').value = '';
+        }
+
+        // UI Helpers
+        function updateProgress(percent) {
+            document.querySelector('.progress-fill').style.width = percent + '%';
+        }
+
+        function showMessage(elementId, text, type) {
+            const el = document.getElementById(elementId);
+            el.textContent = text;
+            el.className = 'message ' + type;
+        }
+    </script>
+</body>
+</html>
