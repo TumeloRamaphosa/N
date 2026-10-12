@@ -1,0 +1,1 @@
+Agricultural Department agent: SA/UAE agriculture trade, export certificates (veterinary/phytosanitary), FMD market-access tracking. All suppliers must pass Robusca sanctions screening before engagement.

@@ -1,0 +1,58 @@
+schema_version: 1
+repository_role: linked_repo_manifest
+repositories:
+  - id: openjarvis
+    what_it_is: Open-source local-first personal AI framework (OpenJarvis)
+    what_it_does: >-
+      Composable on-device stack for model selection, inference engines,
+      tool-using agents, memory and MCP tools, with efficiency-aware evaluation
+      and a learning loop from local interaction traces.
+    maker: Hazy Research and Scaling Intelligence Lab, Stanford SAIL
+    licence: Apache License 2.0
+    recommendation: Trial on the Mac mini as the local personal-AI layer; sandboxed, no keys.
+    location: https://github.com/open-jarvis/OpenJarvis
+    visibility: public
+    used_by: [robusca, dc-engineer]
+    access: read
+  - id: meetings-vault
+    what_it_is: Private meetings repo and Obsidian vault
+    what_it_does: >-
+      Source records for meetings (notes, decisions, actions) read by the
+      chief-of-staff agents; not mirrored into this public control plane.
+    maker: Studex (internal)
+    licence: Private
+    recommendation: >-
+      Source of truth for meeting records; read by meeting-agent, email-agent,
+      notion-agent.
+    location: TBC
+    visibility: private
+    used_by: [meeting-agent, email-agent, notion-agent, robusca]
+    access: read
+  - id: lifecycle-innovations
+    what_it_is: TBC
+    what_it_does: TBC
+    maker: TBC
+    licence: TBC
+    recommendation: >-
+      Link appears truncated; awaiting the full URL from Agent Chief Lord.
+    location: TBC
+    visibility: private
+    used_by: [robusca]
+    access: read
+  - id: agents-office
+    what_it_is: >-
+      3D web office of 35 AI agents in 6 departments, built on Claude Code/Codex
+    what_it_does: >-
+      Routes typed tasks to agents that read and write an Obsidian-style notes
+      folder, with connector allow/deny lists and approval before outbound actions
+    maker: AJ Sahni (Sahni.ai)
+    licence: >-
+      PolyForm Noncommercial 1.0.0 (source-available; internal use only, no resale
+      or paid product)
+    recommendation: >-
+      Trial internally on the Mac mini against a copy of one vault, with no keys or
+      compliance files. Do not build StudBot on it (licence).
+    location: https://github.com/ajsahni/agents-office
+    visibility: public
+    used_by: [robusca]
+    access: read

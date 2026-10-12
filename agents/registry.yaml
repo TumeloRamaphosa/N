@@ -49,3 +49,74 @@ agents:
     work_dir: work/nexus-server
     memory_dir: memory/nexus-server
     obsidian_vault: pending
+  - id: agricultural-department
+    role: agriculture_trade_and_market_access
+    status: setup_pending
+    work_dir: work/agricultural-department
+    memory_dir: memory/agricultural-department
+    obsidian_vault: pending
+  - id: email-agent
+    role: email_drafting_and_outreach
+    status: setup_pending
+    work_dir: work/email-agent
+    memory_dir: memory/email-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    reads_from: ['meetings-repo (Meetings--coms)', meetings-vault]
+    reports_to: robusca
+  - id: notion-agent
+    role: notion_command_centre
+    status: setup_pending
+    work_dir: work/notion-agent
+    memory_dir: memory/notion-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    reports_to: robusca
+  - id: meeting-agent
+    role: meetings_and_vault
+    status: setup_pending
+    work_dir: work/meeting-agent
+    memory_dir: memory/meeting-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    reports_to: robusca
+  - id: vercel-agent
+    role: vercel_deployments
+    status: setup_pending
+    work_dir: work/vercel-agent
+    memory_dir: memory/vercel-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    team: deployment-team
+    supports: claudio
+    reports_to: vercel-foreman
+  - id: cloudflare-agent
+    role: cloudflare_edge
+    status: setup_pending
+    work_dir: work/cloudflare-agent
+    memory_dir: memory/cloudflare-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    team: deployment-team
+    supports: claudio
+    reports_to: robusca
+  - id: gcp-agent
+    role: gcp_infrastructure
+    status: setup_pending
+    work_dir: work/gcp-agent
+    memory_dir: memory/gcp-agent
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    team: deployment-team
+    supports: claudio
+    reports_to: robusca
+  - id: vercel-foreman
+    role: software_factory_foreman
+    status: setup_pending
+    work_dir: work/vercel-foreman
+    memory_dir: memory/vercel-foreman
+    obsidian_vault: pending
+    skills: [ponytail, headroom, cognitive, graphify]
+    team: deployment-team
+    oversees: [vercel-agent]
+    reports_to: robusca
