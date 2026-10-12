@@ -19,6 +19,12 @@ volatile runtime caches stay on their host or in approved artifact storage.
 The repository is the source of truth for definitions and history. It is not a
 shared live filesystem or a place to store secrets.
 
+## Deal Agent Team
+
+Partner intake, Robusca compliance gating, draft Africa collaboration proposals,
+and post-approval execution planning live under [`deal-agents/`](deal-agents/README.md).
+Run locally: `node deal-agents/orchestrator.js` (fictional example data only).
+
 ## Current model-house status
 
 - Jev-Style 2B is already available locally through the MLX service recorded in
